@@ -1,0 +1,29 @@
+# Terraform がダウンロードしたプロバイダとモジュール
+.terraform/
+
+# 状態ファイル（リソースの実体と、シークレットが入り得る）
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# クラッシュログ
+crash.log
+crash.*.log
+
+# 変数ファイル（パスワードや鍵を書くことが多い）
+*.tfvars
+*.tfvars.json
+
+# 手元だけの上書き
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# terraform plan -out で出した計画ファイル
+*.tfplan
+tfplan
+
+# CLI の認証設定
+.terraformrc
+terraform.rc
